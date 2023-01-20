@@ -46,6 +46,7 @@ By modifying variables we can redefine their values prior to execution. By defau
 HTTP_PORT=8081 make app.up
 
 TEST
+```
 
 ![Test](https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/postman.png)
 
