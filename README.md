@@ -1,6 +1,6 @@
 devops assignment - Terraform + API in python container
 ===============
-![Diagrama] (https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/diagrama.png)
+![Diagrama](https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/diagrama.png)
 
 
 
@@ -39,12 +39,12 @@ Run the first time
 ```
 make ct.build.image
 ```
-![up container] (https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/up%20container%20.png)
+![upcontainer](https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/up%20container%20.png)
 By modifying variables we can redefine their values prior to execution. By default the variables are defined in the Makefile.
 ```
 HTTP_PORT=8081 make app.up
 
 TEST
-![test] (https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/postman.png)
+![test](https://github.com/jcvergara90/devops-assignment/blob/main/imagenes/postman.png)
 
 ```
