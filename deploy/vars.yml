@@ -1,0 +1,32 @@
+dev:
+  OWNER                         : "demo"
+  ELBNAME                       : "demo-dev-alb"
+  VPCID                         : "vpc-12345"
+  DOMAIN                        : "domain.pe"
+  CLUSTER_NAME                  : "demo-dev"
+  DEPLOY_REGION                 : "eu-west-1"
+  SUBNETS_ID			              : "subnet-xxxx,subnet-xxxx,subnet-xxxx"
+  CIDR_IPS				              : "10.0.0.0/16,172.28.0.0/16,172.28.0.0/16"
+  DESTINATION_PREFIX_LIST_ID    : "pl-xxxxx"
+
+pre:
+  OWNER                         : "demo"
+  ELBNAME                       : "demo-pre-alb"
+  VPCID                         : "vpc-0754da574a3baf0ab"
+  DOMAIN                        : "domain.pe"
+  CLUSTER_NAME                  : "demo-pre"
+  DEPLOY_REGION                 : "us-west-2"
+  SUBNETS_ID			              : "subnet-xxxx,subnet-xxxx,subnet-xxxx"
+  CIDR_IPS				              : "10.0.0.0/16,172.28.0.0/16,172.28.0.0/16"
+  DESTINATION_PREFIX_LIST_ID    : "pl-xxxxx"
+
+prod:
+  OWNER                         : "demo"
+  ELBNAME                       : "demo-prod-alb"
+  VPCID                         : "vpc-5d704e38"
+  DOMAIN                        : "domain.pe"
+  CLUSTER_NAME                  : "demo-prod"
+  DEPLOY_REGION                 : "us-east-1"
+  SUBNETS_ID			              : "subnet-xxxx,subnet-xxxx,subnet-xxxx"
+  CIDR_IPS				              : "10.0.0.0/16,172.28.0.0/16,172.28.0.0/16"
+  DESTINATION_PREFIX_LIST_ID    : "pl-xxxxx"

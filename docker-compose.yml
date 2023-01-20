@@ -1,0 +1,17 @@
+version: '3'
+services:
+  api:
+    image: $IMAGE
+    container_name: ${CONTAINER_NAME}_api
+    working_dir: /$WORKDIR
+    command: uvicorn app:app --host=0.0.0.0 --port=${HTTP_PORT} --reload
+    environment:
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+      AWS_PROFILE: ${AWS_PROFILE}
+      TZ: America/Lima
+    ports:
+      - $HTTP_PORT:$HTTP_PORT
+    volumes:
+      - ./$WORKDIR:/$WORKDIR
+      - ~/.aws/config:/root/.aws/config
+      - ~/.aws/credentials:/root/.aws/credentials
