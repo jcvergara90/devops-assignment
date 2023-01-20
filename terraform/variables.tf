@@ -3,7 +3,7 @@
 variable "domain_name" {
   type        = string
   description = "Existing domain record already setup in route53"
-  default     = "dev.perueduca.digital.otic.pe"
+  default     = ""
 }
 
 variable "route53_subdomain" {
@@ -15,7 +15,7 @@ variable "route53_subdomain" {
 variable "domain_name_certificate_arn" {
   type        = string
   description = "The ACM certificate ARN to use for the api gateway"
-  default     = "arn:aws:acm:us-east-2:793967978418:certificate/92ac2ea8-559b-4530-a4ee-9450623ffacb"
+  default     = "arn:aws:acm:us-east-2:xxxxxxxxxxx:certificate/92ac2ea8-559b-4530-a4ee-9450623ffacb"
 }
 
 
